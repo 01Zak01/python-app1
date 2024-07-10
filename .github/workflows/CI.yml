@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: build image
-        run: docker build -t kaizen2024/python-app1:1.0.0
+        run: docker build -t kaizen2024/python-app1:1.0.0 .
