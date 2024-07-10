@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: unit test
+        run: pytest
+
       # - name: build image
       #   run: docker build -t kaizen2024/python-app1:1.0.0 .
 
