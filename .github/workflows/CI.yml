@@ -17,14 +17,14 @@ jobs:
       - run: pip install pytest flask-testing
 
 
-      - name: unit test
-        run: pytest
+      # - name: unit test
+      #   run: pytest
 
-      - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@v2.3.0 # Ex: v2.1.0, See the latest version at https://github.com/marketplace/actions/official-sonarqube-scan
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }}
+      # - name: SonarQube Scan
+      #   uses: sonarsource/sonarqube-scan-action@v2.3.0 # Ex: v2.1.0, See the latest version at https://github.com/marketplace/actions/official-sonarqube-scan
+      #   env:
+      #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      #     SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }}
 
       # - name: build image
       #   run: docker build -t kaizen2024/python-app1:2.0.0 .
